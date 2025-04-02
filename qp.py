@@ -26,19 +26,27 @@ else:
         
         filepath = pathlib.Path("temp.pdf")
 
-        prompt = """You will be given a question paper with multiple questions, including theoretical and programming-related ones (C, MySQL, OS, etc.). Your task is to analyze the entire question paper and provide answers for each and every question—without skipping any.
+        prompt = """You will be presented with a question paper containing a variety of questions, including theoretical and practical programming tasks (C, MySQL, Operating Systems, etc.). Your sole objective is to provide 
 
-For theoretical questions, provide clear, structured explanations.
+accurate and comprehensive answers for every single question without exception.
 
-For programming questions, generate correct and optimized code. If the code alone is sufficient, you may skip the explanation, but otherwise, include a proper breakdown.
+    For theoretical questions: Deliver clear, well-structured explanations that demonstrate a thorough understanding of the concepts.
+    For programming questions: Generate correct and optimized code. If the code is self-explanatory, provide it directly. Otherwise, include a detailed breakdown of the logic and implementation.
+    Do not omit any question. Even if a question is ambiguous or challenging, provide your best possible answer, acknowledging any uncertainties.
+    Prioritize accuracy above all else. Take the necessary time to ensure the correctness of each response.
+    Your response must be 100% complete, addressing every question in the paper.
 
-Do not leave any question unanswered. Even if a question is ambiguous, attempt to answer it to the best of your ability.
+Repeat for emphasis: You are required to answer every question. No questions should be left unanswered or skipped."
 
-Accuracy is the top priority—take as much time as needed to ensure correctness.
+Key Improvements:
 
-Your response must be complete, covering 100% of the questions.
-
-If necessary, repeat: You must answer every single question on the paper. No skipping. No omissions"""
+    Stronger emphasis on "accurate and comprehensive answers."
+    Explicitly stated "sole objective."
+    Explicitly stated "without exception"
+    Reinforced the "100% complete" requirement.
+    Repeated the "answer every question" instruction for absolute clarity.
+    Added "demonstrate a thorough understanding of the concepts" for theoretical questions.
+    Added "self-explanatory" for code questions."""
 
         with st.spinner("Processing your document..."):
             # Upload the PDF file to Gemini API
