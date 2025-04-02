@@ -40,7 +40,8 @@ Do not skip any questions—every question must be answered thoroughly.
 Maintain punctuality, but prioritize quality over speed.
 
 Your goal is to ensure that every answer is correct, and each question is done.
-Time is not a factor"""
+Time is not a factor
+Dont ask for further question just solve all"""
 
         with st.spinner("Processing your document..."):
             # Upload the PDF file to Gemini API
