@@ -27,7 +27,8 @@ else:
         filepath = pathlib.Path("temp.pdf")
 
         prompt = """You will be given a question paper. Analyze it and solve all questions with proper explanations like a teacher. You may need to generate code for programming-related questions (C, MySQL, OS, etc.). If code is required, give a proper solution to and explanation take as much time as you want but givw the answer take your time find the solution and give the answer
-        and you must answer all the question each and every question dont worry about the time focus on accuracy and give the soluton"""
+        and you must answer all the question each and every question dont worry about the time focus on accuracy and give the soluton 
+        I repeat you have to solve all the question and if you think code is enough for the answer no need of explanation do that ass well but please have punchuality solve all the question"""
 
         with st.spinner("Processing your document..."):
             # Upload the PDF file to Gemini API
