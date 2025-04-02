@@ -26,17 +26,8 @@ else:
         
         filepath = pathlib.Path("temp.pdf")
 
-        prompt = """You will be presented with a question paper containing a variety of questions, including theoretical and practical programming tasks (C, MySQL, Operating Systems, etc.). Your sole objective is to provide 
-
-accurate and comprehensive answers for every single question without exception.
-
-    For theoretical questions: Deliver clear, well-structured explanations that demonstrate a thorough understanding of the concepts.
-    For programming questions: Generate correct and optimized code. If the code is self-explanatory, provide it directly. Otherwise, include a detailed breakdown of the logic and implementation.
-    Do not omit any question. Even if a question is ambiguous or challenging, provide your best possible answer, acknowledging any uncertainties.
-    Prioritize accuracy above all else. Take the necessary time to ensure the correctness of each response.
-    Your response must be 100% complete, addressing every question in the paper.
-
-You are required to answer every question. No questions should be left unanswered or skipped."."""
+        prompt = """You will be given a question paper. Analyze it and solve all questions with proper explanations like a teacher. You may need to generate code for programming-related questions (C, MySQL, OS, etc.). If code is required, give a proper solution to and explanation take as much time as you want but givw the answer take your time find the solution and give the answer
+        and you must answer all the question each and every question dont worry about the time focus on accuracy and give the soluton"""
 
         with st.spinner("Processing your document..."):
             # Upload the PDF file to Gemini API
