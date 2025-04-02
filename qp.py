@@ -26,7 +26,8 @@ else:
 
         prompt = """NO NEED TO SOLVE THE QUESTION JUST GIVE THE EXTRACTED QUESTION FROM THE QUESTION PAPER
 NO SOLUTION JUST THE QUESTION PAPER 
-JUST JIVE THE TEXT FROM THE QUESTION PAPER IN A USER READABLE FORMAT"""
+JUST JIVE THE TEXT FROM THE QUESTION PAPER IN A USER READABLE FORMAT
+you mayget some picture related question try you best to give those in best format by using arrow circle if you can this you might get in automata and formala language or dbmse"""
 
         with st.spinner("Processing your document..."):
             # Upload the PDF file to Gemini API
