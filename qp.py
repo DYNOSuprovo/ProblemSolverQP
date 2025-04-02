@@ -27,6 +27,7 @@ else:
         filepath = pathlib.Path("temp.pdf")
 
         prompt = """You will be given a question paper containing various questions, including theoretical and programming-related ones (C, MySQL, OS, etc.). Your task is to analyze the entire question paper and provide accurate, well-explained answers like a teacher.
+Your main goal is to solve the entire question paper, like all the question you have to solve each and ever question
 
 For theoretical questions, give clear, detailed explanations.
 
@@ -38,7 +39,8 @@ Do not skip any questions—every question must be answered thoroughly.
 
 Maintain punctuality, but prioritize quality over speed.
 
-Your goal is to ensure that every answer is well-structured, correct, and easy to understand."""
+Your goal is to ensure that every answer is correct, and each question is done.
+Time is not a factor"""
 
         with st.spinner("Processing your document..."):
             # Upload the PDF file to Gemini API
