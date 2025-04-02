@@ -36,17 +36,7 @@ accurate and comprehensive answers for every single question without exception.
     Prioritize accuracy above all else. Take the necessary time to ensure the correctness of each response.
     Your response must be 100% complete, addressing every question in the paper.
 
-Repeat for emphasis: You are required to answer every question. No questions should be left unanswered or skipped."
-
-Key Improvements:
-
-    Stronger emphasis on "accurate and comprehensive answers."
-    Explicitly stated "sole objective."
-    Explicitly stated "without exception"
-    Reinforced the "100% complete" requirement.
-    Repeated the "answer every question" instruction for absolute clarity.
-    Added "demonstrate a thorough understanding of the concepts" for theoretical questions.
-    Added "self-explanatory" for code questions."""
+You are required to answer every question. No questions should be left unanswered or skipped."."""
 
         with st.spinner("Processing your document..."):
             # Upload the PDF file to Gemini API
