@@ -26,22 +26,19 @@ else:
         
         filepath = pathlib.Path("temp.pdf")
 
-        prompt = """You will be given a question paper containing various questions, including theoretical and programming-related ones (C, MySQL, OS, etc.). Your task is to analyze the entire question paper and provide accurate, well-explained answers like a teacher.
-Your main goal is to solve the entire question paper, like all the question you have to solve each and ever question
+        prompt = """You will be given a question paper with multiple questions, including theoretical and programming-related ones (C, MySQL, OS, etc.). Your task is to analyze the entire question paper and provide answers for each and every question—without skipping any.
 
-For theoretical questions, give clear, detailed explanations.
+For theoretical questions, provide clear, structured explanations.
 
-For coding questions, provide correct and optimized code. If the code alone is sufficient, you may skip the explanation. Otherwise, include a proper explanation of how the code works.
+For programming questions, generate correct and optimized code. If the code alone is sufficient, you may skip the explanation, but otherwise, include a proper breakdown.
 
-Accuracy is the priority—take your time to ensure correctness.
+Do not leave any question unanswered. Even if a question is ambiguous, attempt to answer it to the best of your ability.
 
-Do not skip any questions—every question must be answered thoroughly.
+Accuracy is the top priority—take as much time as needed to ensure correctness.
 
-Maintain punctuality, but prioritize quality over speed.
+Your response must be complete, covering 100% of the questions.
 
-Your goal is to ensure that every answer is correct, and each question is done.
-Time is not a factor
-Dont ask for further question just solve all"""
+If necessary, repeat: You must answer every single question on the paper. No skipping. No omissions"""
 
         with st.spinner("Processing your document..."):
             # Upload the PDF file to Gemini API
