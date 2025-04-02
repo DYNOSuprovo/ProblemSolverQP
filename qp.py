@@ -45,7 +45,7 @@ If necessary, repeat: You must answer every single question on the paper. No ski
             uploaded_file = genai.upload_file("temp.pdf")
             
             # Generate response
-            model = genai.GenerativeModel("gemini-2.0-flash")
+            model = genai.GenerativeModel("gemini-1.5-pro")
             response = model.generate_content(
                 [uploaded_file, prompt]
             )
