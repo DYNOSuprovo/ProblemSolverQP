@@ -34,7 +34,7 @@ else:
             uploaded_file = genai.upload_file("temp.pdf")
             
             # Generate response
-            model = genai.GenerativeModel("gemini-2.0-flash")
+            model = genai.GenerativeModel("gemini-1.5-pro")
             response = model.generate_content(
                 [uploaded_file, prompt]
             )
