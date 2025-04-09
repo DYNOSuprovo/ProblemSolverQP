@@ -14,7 +14,7 @@ else:
     genai.configure(api_key=api_key)
 
     st.title("DYNO AI Question Paper Solver")
-    st.write("Upload a PDF question paper, and the AI will solve it with explanations.")
+    st.write("Upload a PDF question paper, and the AI wextract text")
 
     uploaded_file = st.file_uploader("Choose a PDF file", type=["pdf"])
 
@@ -24,9 +24,9 @@ else:
         
         filepath = pathlib.Path("temp.pdf")
 
-        prompt = """NO NEED TO SOLVE THE QUESTION JUST GIVE THE EXTRACTED QUESTION FROM THE QUESTION PAPER
-NO SOLUTION JUST THE QUESTION PAPER 
-JUST JIVE THE TEXT FROM THE QUESTION PAPER IN A USER READABLE FORMAT
+        prompt = """NO NEED TO SOLVE THE QUESTION JUST GIVE THE EXTRACTED text FROM file
+NO SOLUTION JUST THE text
+JUST JIVE THE TEXT FROM THE file IN A USER READABLE FORMAT
 you mayget some picture related question try you best to give those in best format by using arrow circle if you can this you might get in automata and formala language or dbmse"""
 
         with st.spinner("Processing your document..."):
